@@ -27,9 +27,9 @@ public class EventsController {
     public Event findById(@PathVariable long id){
         return eventsService.findById(id);
     }
-    @PutMapping("/{id}")
+   /* @PutMapping("/{id}")
     @PreAuthorize("hasAuthority('ORGANIZER')")
     public Event addImage(@PathVariable long id, @RequestBody EventDTO body){
         return eventsService.addImage(id, body);
-    }
+    }*/
 }
